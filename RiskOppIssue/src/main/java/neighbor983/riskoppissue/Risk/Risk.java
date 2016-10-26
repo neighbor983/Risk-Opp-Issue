@@ -4,14 +4,13 @@ package neighbor983.riskoppissue.Risk;
 import java.util.List;
 import neighbor983.riskoppissue.Risk.RiskConsequence.RiskConsequence;
 import neighbor983.riskoppissue.Risk.RiskLikelihood.RiskLikelihood;
-import neighbor983.riskoppissue.RiskType;
 
 public class Risk {
     
     	private int id;
 	private RiskLikelihood likelihood;
 	private RiskConsequence consequence;
-	private String riskLevel;
+	private RiskLevel riskLevel;
 	private String riskStatement;
 	private String pointOfContact;
 	private String Status;

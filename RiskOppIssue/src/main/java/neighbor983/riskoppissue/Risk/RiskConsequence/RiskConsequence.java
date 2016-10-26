@@ -1,6 +1,6 @@
 package neighbor983.riskoppissue.Risk.RiskConsequence;
 
-import neighbor983.riskoppissue.RiskConsequenceType;
+import neighbor983.riskoppissue.Risk.RiskConsequenceType;
 
 public class RiskConsequence {
 
