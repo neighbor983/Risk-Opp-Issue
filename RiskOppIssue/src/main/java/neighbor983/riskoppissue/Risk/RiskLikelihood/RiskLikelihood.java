@@ -1,4 +1,4 @@
-package neighbor983.riskoppissue;
+package neighbor983.riskoppissue.Risk.RiskLikelihood;
 
 
 public class RiskLikelihood {

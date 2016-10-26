@@ -1,6 +1,10 @@
-package neighbor983.riskoppissue;
+package neighbor983.riskoppissue.Risk;
+
 
 import java.util.List;
+import neighbor983.riskoppissue.Risk.RiskConsequence.RiskConsequence;
+import neighbor983.riskoppissue.Risk.RiskLikelihood.RiskLikelihood;
+import neighbor983.riskoppissue.RiskType;
 
 public class Risk {
     
