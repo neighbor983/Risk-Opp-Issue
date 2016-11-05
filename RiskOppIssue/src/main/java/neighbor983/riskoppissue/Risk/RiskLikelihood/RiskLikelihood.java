@@ -9,13 +9,13 @@ import javax.persistence.Id;
 import org.springframework.beans.factory.annotation.Value;
 
 @Entity
-@Table(name = "risk_likelihood")
+@Table(name = "risklikelihood")
 public class RiskLikelihood {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "risk_likelihood_id")
-    private int id;
+    @Column(name = "id")
+    private Long id;
     
     @Column(name="risk_likelihood")
     private String likelihood;
@@ -27,10 +27,53 @@ public class RiskLikelihood {
     @Column(name="level")
     private int level;
 
-    public RiskLikelihood(String Likelihood, String ProbabilityOfOccurrence){//, int Level) {
-        this.likelihood = Likelihood;
-        this.probabilityOfOccurrence = ProbabilityOfOccurrence;
-        //this.level = Level;
+    public RiskLikelihood(String likelihood, String probabilityOfOccurrence, int level) {
+        this.likelihood = likelihood;
+        this.probabilityOfOccurrence = probabilityOfOccurrence;
+        this.level = level;
     }
+    
+    protected RiskLikelihood(){};
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getLikelihood() {
+        return likelihood;
+    }
+
+    public void setLikelihood(String likelihood) {
+        this.likelihood = likelihood;
+    }
+
+    public String getProbabilityOfOccurrence() {
+        return probabilityOfOccurrence;
+    }
+
+    public void setProbabilityOfOccurrence(String probabilityOfOccurrence) {
+        this.probabilityOfOccurrence = probabilityOfOccurrence;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    @Override
+    public String toString() {
+        return "RiskLikelihood{" + "id=" + id + ", likelihood=" + likelihood + ", probabilityOfOccurrence=" + probabilityOfOccurrence + ", level=" + level + '}';
+    }
+    
+    
+
+
 
 }
