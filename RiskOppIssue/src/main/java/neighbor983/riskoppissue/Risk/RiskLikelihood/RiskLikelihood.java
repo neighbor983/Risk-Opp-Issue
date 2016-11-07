@@ -17,13 +17,12 @@ public class RiskLikelihood {
     @Column(name = "id")
     private Long id;
     
-    @Column(name="risk_likelihood")
+    @Column(name="risklikelihood")
     private String likelihood;
     
-    @Column(name="probability_of_occurrence")
+    @Column(name="probabilityofoccurrence")
     private String probabilityOfOccurrence;
-    
-    
+        
     @Column(name="level")
     private int level;
 
@@ -33,7 +32,7 @@ public class RiskLikelihood {
         this.level = level;
     }
     
-    protected RiskLikelihood(){};
+    public RiskLikelihood(){};
 
     public Long getId() {
         return id;
