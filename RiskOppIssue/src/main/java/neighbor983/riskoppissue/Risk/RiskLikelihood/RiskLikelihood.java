@@ -17,7 +17,7 @@ public class RiskLikelihood {
     @Column(name = "id")
     private Long id;
     
-    @Column(name="risklikelihood")
+    @Column(name="likelihood")
     private String likelihood;
     
     @Column(name="probabilityofoccurrence")
